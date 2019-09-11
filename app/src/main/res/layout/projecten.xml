@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+
+    <ImageView
+        android:id="@+id/project_image1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="-2dp"
+        android:adjustViewBounds="true"
+        android:padding="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/project1">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/projectnaam1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_image1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-10dp"
+        android:text="Projectnaam"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/info_project1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/projectnaam1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-10dp"
+        android:paddingTop="10dp"
+        android:text="Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing">
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/project_image2"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        android:padding="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/project2"
+        android:layout_below="@+id/info_project1">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/projectnaam2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_image2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-10dp"
+        android:text="Projectnaam"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/info_project2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/projectnaam2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-10dp"
+        android:paddingTop="10dp"
+        android:text="Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing">
+    </TextView>
+
+</RelativeLayout>

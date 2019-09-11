@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Appbakkers</string>
+    <string name="nav_back">Back</string>
+    <string name="nav_contact">Contact</string>
+    <string name="contact">// Contact </string>
+    <string name="projecten">// Projecten </string>
+    <string name="appbakkers">// De Bakkers </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
