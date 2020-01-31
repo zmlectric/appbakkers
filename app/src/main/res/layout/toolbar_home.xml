@@ -1,41 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:orientation="vertical">
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
 
 
     <RelativeLayout
         android:id="@+id/toolbar"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:layout_marginTop="0dp"
-
-        >
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize">
 
         <ImageButton
             android:id="@+id/contact_button_home"
             android:layout_width="60dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginRight="28dp"
-            android:layout_marginBottom="80dp"
+            android:layout_centerInParent="true"
             android:background="@null"
             android:maxHeight="?attr/actionBarSize"
             android:scaleType="fitCenter"
             android:src="@drawable/contact_icon_wit" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="75dp"
-            android:layout_centerInParent="true"
-            app:srcCompat="@drawable/home_logo" />
-
     </RelativeLayout>
 
 
 </RelativeLayout>
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="200dp"-->
+<!--    android:orientation="vertical">-->
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginTop="0dp">-->
+
+<!--    <ImageButton-->
+<!--        android:id="@+id/contact_button"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:background="@null"-->
+<!--        android:maxHeight="?attr/actionBarSize"-->
+<!--        android:scaleType="fitCenter"-->
+<!--        android:src="@drawable/contact_icon" />-->
+
+<!--&lt;!&ndash;        <ImageButton&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/contact_button_home"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="60dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_alignRight="@id/imageView"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_alignParentRight="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_alignParentBottom="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginLeft="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginRight="28dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginBottom="80dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@null"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:maxHeight="?attr/actionBarSize"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:scaleType="fitCenter"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:src="@drawable/contact_icon_wit" />&ndash;&gt;-->
+
+
+
+<!--    </RelativeLayout>-->
+
+
+<!--</RelativeLayout>-->

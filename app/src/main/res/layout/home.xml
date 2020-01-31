@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
     android:orientation="vertical"
-    
+
     >
 
     <RelativeLayout
@@ -17,127 +17,81 @@
 
     </RelativeLayout>
 
-    <!--android:layout_alignParentStart="true"-->
-    <!--android:layout_alignParentTop="true"-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/home_logo" />
 
 
     <include
         android:id="@+id/toolbar_home"
-        layout="@layout/toolbar_home" />
+        layout="@layout/toolbar_home"
+        android:layout_marginTop="50dp" />
 
-    <!--android:layout_alignParentStart="true"-->
-    <!--android:layout_alignParentTop="true"-->
-    <!--android:layout_marginStart="-164dp"-->
-    <!--android:layout_marginTop="10dp"-->
-
-    <RelativeLayout
-        android:layout_width="700dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="false"
-        android:layout_centerHorizontal="false"
-        android:layout_centerVertical="false"
-        android:layout_marginEnd="-1dp"
-        android:layout_marginRight="-1dp"
-        android:layout_marginBottom="6dp"
-        android:padding="50dp">
+        android:orientation="horizontal"
+        android:padding="50dp"
+        android:weightSum="2">
 
-        <ImageButton
-            android:id="@+id/projecten_button"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_above="@id/projecten_titel"
-            android:layout_alignParentBottom="false"
-            android:layout_centerHorizontal="false"
-            android:layout_gravity="center"
-            android:layout_marginLeft="25dp"
-            android:layout_marginBottom="10dp"
-            android:background="@null"
-            android:scaleType="fitCenter"
-            android:src="@drawable/smartphone_icon" />
-
-        <ImageButton
-            android:id="@+id/appbakkers_button"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-
-            android:layout_gravity="center"
-            android:layout_marginStart="154dp"
-            android:layout_marginLeft="154dp"
-            android:layout_marginBottom="3dp"
-            android:layout_toEndOf="@+id/projecten_button"
-            android:layout_toRightOf="@+id/projecten_button"
-            android:background="@null"
-            android:scaleType="fitCenter"
-            android:src="@drawable/people_icon" />
-
-<!--        android:layout_above="@id/appbakkers_tekst"-->
-
-        <TextView
-            android:id="@+id/projecten_titel"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="75dp"
-            android:text="Projecten"
-            android:textColor="#40ADC5"
-            android:textSize="20sp" />
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/appbakkers_tekst"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="101dp"
-            android:layout_marginEnd="98dp"
-            android:layout_marginRight="98dp"
-            android:text="Appbakkers"
-            android:textColor="#40ADC5"
-            android:textSize="20sp" />
+            <ImageButton
+                android:id="@+id/projecten_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/smartphone_icon" />
 
-        <!--<TextView-->
-            <!--android:id="@+id/appbakkers_tekst"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:layout_marginLeft="225dp"-->
-            <!--android:layout_marginBottom="75dp"-->
-            <!--android:text="Appbakkers"-->
-            <!--android:textColor="#40ADC5"-->
-            <!--android:textSize="20sp" />-->
+            <TextView
+                android:id="@+id/projecten_titel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Projecten"
+                android:textAlignment="center"
+                android:textColor="#40ADC5"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
 
-    </RelativeLayout>
+            <ImageButton
+                android:id="@+id/appbakkers_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/people_icon" />
 
-    <!--</RelativeLayout>-->
+            <TextView
+                android:id="@+id/appbakkers_tekst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Appbakkers"
+                android:textAlignment="center"
+                android:textColor="#40ADC5"
+                android:textSize="20sp" />
 
-    <!--</RelativeLayout>-->
+        </LinearLayout>
 
-    <!--<ImageView-->
-    <!--android:id="@+id/home_logo"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_alignParentStart="true"-->
-    <!--android:layout_alignParentLeft="true"-->
-    <!--android:layout_alignParentTop="true"-->
-    <!--android:layout_alignParentEnd="true"-->
-    <!--android:layout_alignParentRight="true"-->
-    <!--android:layout_gravity="center"-->
-    <!--android:layout_marginStart="118dp"-->
-    <!--android:layout_marginLeft="118dp"-->
-    <!--android:layout_marginTop="291dp"-->
-    <!--android:layout_marginEnd="152dp"-->
-    <!--android:layout_marginRight="152dp"-->
-    <!--app:srcCompat="@drawable/home_logo" />-->
-
-
-    <!--<RelativeLayout-->
-    <!--android:layout_width=""-->
-    <!--android:layout_height=""></RelativeLayout>-->
+    </LinearLayout>
 
 </RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:id="@+id/parent_layout"
+    android:orientation="vertical">
+
+<!--    <ImageView-->
+<!--        android:layout_width="400dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:id="@+id/image"-->
+<!--        android:src="@mipmap/ic_launcher"/>-->
+
+
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-3dp"
+        android:layout_marginBottom="-2dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/projectNaam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:text="Title"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+
+        android:id="@+id/project_beschrijving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/projectnaam"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:text="Projectbeschrijving">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/leesmeer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="Lees meer"
+        android:textColor="#40ADC5"
+        android:layout_gravity="right">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="#40ADC5" />
+
+
+</LinearLayout>

@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+<!--    <style name="SimpleBreakStrategy">-->
+<!--        <item name="android:breakStrategy" tools:targetApi="m">simple</item>-->
+<!--    </style>-->
+
 </resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/parent_layout"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/projectnaam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="62dp"
+        android:text="Projectnaam"
+        android:textSize="24sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+<!--            <WebView-->
+<!--                android:id="@+id/project_beschrijving"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/projectnaam"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingBottom="10dp"-->
+<!--                android:text="Projectbeschrijing"-->
+<!--                android:textSize="18sp">-->
+
+<!--            </WebView>-->
+
+            <LinearLayout
+                android:id="@+id/SliderDots"
+
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+<!--            <androidx.viewpager.widget.ViewPager-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:id="@+id/viewpager"-->
+<!--                android:layout_below="@id/projectnaam"/>-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/image2"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_below="@id/projectnaam"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="-3dp"-->
+<!--                android:layout_marginBottom="-2dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:scaleType="fitXY">-->
+
+<!--            </ImageView>-->
+
+    <WebView
+        android:id="@+id/project_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image2"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        android:text="informatie">
+
+    </WebView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="2dp"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:background="#40ADC5" />-->
+
+</LinearLayout>
